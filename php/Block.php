@@ -68,7 +68,7 @@ class Block {
 
 		?>
 		<div class="<?php echo $class_name; ?>">
-			<h2>Post Counts</h2>
+			<h2><?php echo esc_html__( 'Post Counts', 'site-counts' )?></h2>
 			<?php
 			foreach ( $post_types as $post_type_slug ) :
 				$post_type_object = get_post_type_object( $post_type_slug );
